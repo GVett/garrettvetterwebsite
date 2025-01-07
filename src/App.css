@@ -1,0 +1,334 @@
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+
+/*   ----- Imports  -----  */
+  /* @import 'node_modules/modern-normalize/modern-normalize.css';  npm install modern-normalize  Resets elements for browser consistency.  https://www.npmjs.com/package/modern-normalize */         
+  /* @import "component1.css";   Component-specific stylesheets, if any.   */
+  /* @import url(//fonts.googleapis.com/css?family=Font+Name); Add fonts from a hosted services like Google Fonts.   */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/*   ----- Variables  -----  */
+:root {
+    --dark-ocean-blue:#1C1C26;
+    --mild-ocean-blue:#6A84A6;
+    --light-sky-blue:#B7C7C7;
+    --light-sky-blue-hue:#b7c7c7d6;
+    --sunset-orange:#ffe38da5;
+    --light-sunset-pink:#F2C6A0;
+  }
+  
+  /*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+  body {       /* Can alternatively define in html {}. */
+    background-image:url(/src/assets/beach_background.jpg);;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top left;
+    background-repeat: no-repeat;
+    color:var(--dark-ocean-blue);
+    font-family:'Poppins', sans-serif; /* Define with at least one font name and its related generic family name.*/
+    margin: 0 3%;
+    padding: 2%;
+    max-width: 90%;
+  }
+  
+  /*  ----- Page layout blocks -----  */
+  header {
+    color:var(--sunset-orange);
+    background-color:var(--dark-ocean-blue);
+    margin: 0 2%;
+    padding: 3%;
+    border: .2em dotted var(--light-sunset-pink);
+  }
+  main {
+    color:var(--dark-ocean-blue);
+    background-color:var(--light-sky-blue-hue);
+    margin: 0 2%;
+    padding: 4%;
+    border: .2em dotted var(--sunset-orange);
+  }
+  section {}
+  article {}
+    #topic1 {}
+    #topic2 {}
+  div {}
+  aside {}
+  footer {
+    color:var(--light-sunset-pink);
+    background-color:var(--dark-ocean-blue);
+    margin: 0 2%;
+    padding: 4%;
+    border: .1em solid var(--light-sky-blue);
+  }
+  
+  /* ----- Anchors ----- Text links */
+  a {}
+  a:link {}
+  a:hover {}
+  a:active {}
+  a:visited {}
+  
+  /*  ----- Navigation ----- Override text links for navigation only.  */
+  nav {
+    color:var(--dark-ocean-blue);
+    background-color: transparent;
+    margin: 0 2%;
+    padding: 0 4%;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  nav.local {
+    margin: 0;
+    padding: 0;
+  }
+  nav a {
+    margin: 0.5em 1em;
+    padding: 0.7em 1em;
+    background-color: var(--mild-ocean-blue);
+    color: var(--dark-ocean-blue);
+    border: .2em solid var(--dark-ocean-blue);
+    text-decoration: none;
+  }
+  nav.local a {
+    margin: 0.5em 1em;
+    padding: 0.3em 0.5em;
+    background-color: var(--light-sky-blue);
+    border: .2em solid var(--light-sunset-pink);
+  }
+  nav a:hover {
+    background-color: var(--light-sunset-pink);
+  }
+  
+  /*  -----  Typography  ----- */
+  p {}
+  br {}
+  ol, ul, dl {}
+  li {}
+  dt {}
+  dd {}
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family:'Bebas Neue', sans-serif
+  } 
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  h4 {}
+  h5 {}
+  h6 {}
+  
+  abbr {}
+  acronym {}
+  address {}
+  blockquote {}
+    q {}
+    cite {}
+  em {}
+  hr {}
+  mark {}
+  s {}
+  span {}
+  strong {}
+  sub {}
+  sup {}
+  time {}
+  
+  /*  ----- Coding or instructional typography ----- */
+  pre {}
+  code {}
+  kbd {}
+  samp {}
+  var {}
+  del {} 
+  ins {}
+  
+  /*  ----- Table ----- */
+  table {
+    background-color: var(--dark-ocean-blue);
+    border: .3em dotted var(--sunset-orange);
+    color: var(--light-sky-blue);
+  }
+  table label {
+    color: var(--light-sky-blue);
+  }
+  caption {
+    text-align: left;
+  }
+  thead {}
+  tbody {}
+  tfoot {}
+  tr {}
+    tr:nth-child(even) {}
+  tr th {
+    color: var(--light-sunset-pink);
+    font-size: 1.5em;
+  }
+  tr td {
+    padding: 1em;
+    margin: 1.5em;
+  }
+  td.price {
+    text-align: right;
+  }
+    td:nth-child(1) {}
+  colgroup {}
+  data {}
+  datalist {}
+  
+  .clicker { 
+    display: flex;
+  }
+  /*  ----- Form ----- */
+  form {}
+  form p {
+    padding: 1em;
+  }
+  fieldset {
+    background-color: var(--sunset-orange);
+    margin: 1em;
+    border: .3em dotted var(--dark-ocean-blue);
+  }
+    legend {
+      color: var(--dark-ocean-blue);
+    }
+  label {
+    color: var(--dark-ocean-blue);
+  }
+  button {
+    width: 15%;
+    height: 7%;
+    background-color: var(--light-sunset-pink);
+    color: var(--dark-ocean-blue);
+  }
+  input {
+    padding: .5em;
+  }
+  select {
+    padding: .3em;
+    margin: .3em;
+  }
+    optgroup {}
+    option {}
+  textarea {
+    height: 20%;
+    width: 50%;
+    padding: 1em;
+    margin: .3em;
+  }
+  output {}
+  meter {}
+  progress {}
+  
+  
+  /* ----- Media ----- */
+  .gallery figure {
+    width: 350px;
+    margin: 1%;
+    padding: 1%;
+    border: .2em solid var(--dark-ocean-blue);
+    background-color: var(--light-sky-blue);
+  }
+    figcaption {
+      font-size: 1.2em;
+      padding: 1%;
+      color: var(--dark-ocean-blue);
+    }
+    figure img {
+      width: 100%;
+    }
+  svg {}
+  picture {}
+    source {}
+  iframe {}
+  video {}
+  audio {}
+  embed {}
+  object {}
+  
+  /*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+  .gallery {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .floatright {}
+  .floatleft {}
+  .center-middle {}
+  
+  .ten {}
+  .twenty {}
+  .thirty {}
+  .forty {}
+  .fifty {}
+  .sixty {}
+  .seventy {}
+  .eighty {}
+  
+  .radius {}
+  .circle {}
+  .boxshadow {}
+  .tshadow {} 
+  .gradient {}
+  .shape {}
+  
+  @keyframes App-logo {}
+  
+  /*   ===== TABLET  media query overrides mobile styles ===== */
+  @media all and (min-width: 600px) {}
+  
+  /*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+  @media all and (min-width: 1080px) {}
+  
+  /*   ===== PRINT  media query overrides previous styles =====  */
+  @media print {}
+
+/*#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+*/
