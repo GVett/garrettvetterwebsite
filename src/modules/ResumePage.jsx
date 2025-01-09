@@ -74,7 +74,7 @@ function ResumePage(){
 
             <article>
                 <h3>Southwestern Oregon Community College / Associate of Science - Computer Science (4.0 GPA)</h3>
-                <h4>September 2024 - Present</h4>
+                <h4>March 2022 - June 2024</h4>
                 <ul>
                     <li>Valedictorian</li>
                     <li>Graduated with Honors</li>
@@ -83,7 +83,7 @@ function ResumePage(){
 
             <article>
                 <h3>North Bend High School / Honors Diploma w/ Emphasis in Mathematics, English, and Computer Technology (4.0 GPA)</h3>
-                <h4>September 2024 - Present</h4>
+                <h4>September 2020 - June 2024</h4>
                 <ul>
                     <li>Valedictorian</li>
                     <li>Class President</li>
