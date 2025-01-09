@@ -5,12 +5,9 @@ function Navigation(){
         <>
             <nav> 
                 <Link to="/">Home</Link>
-                <Link to="/topics">Topics</Link>
-                <Link to="/moviesPage">Movies</Link>
-                <Link to="/order">Order</Link>
+                <Link to="/resume">Resume</Link>
                 <Link to="/gallery">Gallery</Link>
                 <Link to="/contact">Contact</Link>
-                <Link to="/staff">Staff</Link>
             </nav>
         </>
     );

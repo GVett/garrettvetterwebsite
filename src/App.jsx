@@ -1,17 +1,18 @@
-import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import HomePage from './modules/HomePage.jsx';
 import ContactPage from './modules/ContactPage.jsx'
 import GalleryPage from './modules/GalleryPage.jsx'
-import TopicsPage from './modules/TopicsPage.jsx';
+import ResumePage from './modules/ResumePage.jsx'
+import Navigation from './modules/Navigation.jsx';
 import './App.css'
 
 function App() {
-  const [ movie, setMovie ] = useState([]);
   return (
     <>
       <header>
           <h1>Garrett Vetter</h1>
+          <a href="https://www.linkedin.com/in/garrett-vetter-gdv/">LinkedIn</a>
+          <a href="https://github.com/GVett">GitHub</a>
       </header>
       <Router>
           <Navigation />
@@ -21,12 +22,14 @@ function App() {
                       <Route path="/" element={<HomePage />}></Route>
                       <Route path="/contact" element={<ContactPage />}></Route>
                       <Route path="/gallery" element={<GalleryPage />}></Route>
-                      <Route path="/topics" element={<TopicsPage />}></Route>
+                      <Route path="/resume" element={<ResumePage />}></Route>
                   </Routes>
               </section>
           </main>
       </Router>
       <footer>
+          <a href="https://www.linkedin.com/in/garrett-vetter-gdv/">LinkedIn</a>
+          <a href="https://github.com/GVett">GitHub</a>
           <p>&copy; {new Date().getFullYear()} Garrett Vetter</p>
       </footer>
     </>

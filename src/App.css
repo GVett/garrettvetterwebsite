@@ -21,7 +21,7 @@
   
   /*  ----- Viewport ----- elements inherited by all remaining elements ----- */
   body {       /* Can alternatively define in html {}. */
-    background-image:url(/src/assets/beach_background.jpg);;
+    background-image:url(/src/assets/beach_background.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: top left;
@@ -39,17 +39,34 @@
     background-color:var(--dark-ocean-blue);
     margin: 0 2%;
     padding: 3%;
-    border: .2em dotted var(--light-sunset-pink);
+    border: .2em solid var(--light-sunset-pink);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    align-items: center;
+  }
+  header a {
+    color: var(--light-sunset-pink);
+    text-decoration: none;
+  }
+  header a:hover {
+    color: var(--sunset-orange);
+  }
+  header a:visted {
+    color: var(--sunset-orange);
+    text-decoration: none;
   }
   main {
     color:var(--dark-ocean-blue);
     background-color:var(--light-sky-blue-hue);
     margin: 0 2%;
     padding: 4%;
-    border: .2em dotted var(--sunset-orange);
+    border: .2em solid var(--sunset-orange);
   }
   section {}
-  article {}
+  article {
+    margin: 0 0 6% 0;
+  }
     #topic1 {}
     #topic2 {}
   div {}
@@ -60,6 +77,21 @@
     margin: 0 2%;
     padding: 4%;
     border: .1em solid var(--light-sky-blue);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    align-items: center;
+  }
+  footer a {
+    color: var(--light-sunset-pink);
+    text-decoration: none;
+  }
+  footer a:hover {
+    color: var(--sunset-orange);
+  }
+  footer a:visted {
+    color: var(--sunset-orange);
+    text-decoration: none;
   }
   
   /* ----- Anchors ----- Text links */
@@ -84,7 +116,7 @@
   }
   nav a {
     margin: 0.5em 1em;
-    padding: 0.7em 1em;
+    padding: 0.7em 2em;
     background-color: var(--mild-ocean-blue);
     color: var(--dark-ocean-blue);
     border: .2em solid var(--dark-ocean-blue);
@@ -103,7 +135,9 @@
   /*  -----  Typography  ----- */
   p {}
   br {}
-  ol, ul, dl {}
+  ol, ul, dl {
+    line-height: 2em;
+  }
   li {}
   dt {}
   dd {}
@@ -228,6 +262,9 @@
   
   
   /* ----- Media ----- */
+  a {
+    text-decoration: none;
+  }
   .gallery figure {
     width: 350px;
     margin: 1%;
@@ -243,6 +280,9 @@
     figure img {
       width: 100%;
     }
+  img{
+    width: 50%;
+  }
   svg {}
   picture {}
     source {}

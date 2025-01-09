@@ -9,6 +9,12 @@ function GalleryPage(){
     return (
         <>
             <h2>Gallery</h2>
+            <p>
+                This page will eventually feature more cohesive images of my projects,
+                but for now, enjoy my screenshots and photos of flask web app code, a 
+                well-maintained trail (you couldn't see any dirt before we worked on it!), 
+                a number counter widget, and main game loop for my space invaders game!
+            </p>
             <article>
             {
                 images.map((image) => 
