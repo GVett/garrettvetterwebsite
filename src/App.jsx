@@ -3,6 +3,8 @@ import HomePage from './modules/HomePage.jsx';
 import ContactPage from './modules/ContactPage.jsx'
 import GalleryPage from './modules/GalleryPage.jsx'
 import ResumePage from './modules/ResumePage.jsx'
+import BlogPage from './modules/BlogPage.jsx'
+import BlogPost from './modules/BlogPost.jsx'
 import Navigation from './modules/Navigation.jsx';
 import './App.css'
 
@@ -23,6 +25,8 @@ function App() {
                       <Route path="/contact" element={<ContactPage />}></Route>
                       <Route path="/gallery" element={<GalleryPage />}></Route>
                       <Route path="/resume" element={<ResumePage />}></Route>
+                      <Route path="/blog" element={<BlogPage />}></Route>
+                      <Route path="/blog/:slug" element={<BlogPost />}></Route>
                   </Routes>
               </section>
           </main>
