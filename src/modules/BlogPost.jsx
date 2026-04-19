@@ -21,15 +21,17 @@ function BlogPost() {
     });
   }, [slug]);
 
-  if (loading) return <p>Loading...</p>;
-  if (!post) return <p>Post not found.</p>;
+  if (loading) return <p className="text-secondary">Loading...</p>;
+  if (!post) return <p className="text-danger">Post not found.</p>;
 
   return (
-    <article>
-      <Link to="/blog">← Back to Blog</Link>
-      <h2>{post.title}</h2>
-      <p>{new Date(post.publishedAt).toLocaleDateString()}</p>
-      <PortableText value={post.body} />
+    <article style={{maxWidth:'680px'}}>
+      <Link to="/blog" className="text-secondary text-decoration-none small d-inline-block mb-4">← Back to Blog</Link>
+      <h2 style={{color:'#ffe38d'}}>{post.title}</h2>
+      <p className="text-secondary small mb-4">{new Date(post.publishedAt).toLocaleDateString()}</p>
+      <div className="lh-lg">
+        <PortableText value={post.body} />
+      </div>
     </article>
   );
 }

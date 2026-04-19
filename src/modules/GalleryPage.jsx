@@ -13,16 +13,20 @@ const images = [
 function GalleryPage() {
   return (
     <>
-      <h2>Gallery</h2>
-      <p>Photos from my life</p>
-      <article className="gallery">
+      <h2 className="mb-4" style={{color:'#ffe38d'}}>Gallery</h2>
+      <p className="card-text">
+        Small excerpts from my life. All photos displayed are taken by me or a friend.
+      </p>
+      <div className="row g-4">
         {images.map((image) => (
-          <figure key={image.alt}>
-            <img src={image.src} alt={image.alt} title={image.caption} />
-            <figcaption>{image.caption}</figcaption>
-          </figure>
+          <div className="col-sm-6 col-lg-3" key={image.alt}>
+            <div className="card h-100">
+              <img src={image.src} alt={image.alt} className="card-img-top" style={{objectFit:'cover', height:'220px'}} />
+              <div className="card-footer text-center text-secondary">{image.caption}</div>
+            </div>
+          </div>
         ))}
-      </article>
+      </div>
     </>
   );
 }
