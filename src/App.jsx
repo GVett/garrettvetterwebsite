@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './modules/HomePage.jsx';
 import ContactPage from './modules/ContactPage.jsx';
 import GalleryPage from './modules/GalleryPage.jsx';
-import ResumePage from './modules/ResumePage.jsx';
+import EthosPage from './modules/EthosPage.jsx';
 import BlogPage from './modules/BlogPage.jsx';
 import BlogPost from './modules/BlogPost.jsx';
 import Navigation from './modules/Navigation.jsx';
@@ -20,7 +20,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/gallery" element={<GalleryPage />} />
-            <Route path="/resume" element={<ResumePage />} />
+            <Route path="/ethos" element={<EthosPage />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
           </Routes>

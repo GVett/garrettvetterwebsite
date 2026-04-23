@@ -27,9 +27,15 @@ function Entry({ title, href, dates, items }) {
   );
 }
 
-function ResumePage() {
+function EthosPage() {
   return (
     <>
+      <Section title="About Me">
+        <p>
+          Here is some ethos; I talk about a lot, so here are some things I've done
+          and am currently doing.
+        </p>
+      </Section>
       <Section title="Experience">
         <Entry
           title="Oregon State University College of Engineering / IT Support Technician"
@@ -99,4 +105,4 @@ function ResumePage() {
   );
 }
 
-export default ResumePage;
+export default EthosPage;
